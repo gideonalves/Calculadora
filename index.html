@@ -4,10 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
     <title>Calculador</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="calculator">
+        <div>
+            <input type="text" class="display">
+        </div>
+
+        <div class="keyboard">
+            <div class="line">
+                <button class="btn btn-num">7</button>
+                <button class="btn btn-num">8</button>
+                <button class="btn btn-num">9</button>
+                <button class="btn btn-num">
+                    <img src="assets/devide.svg" alt="">
+                </button>
+            </div>    
+
+            <div class="line">
+                <button class="btn btn-num">4</button>
+                <button class="btn btn-num">5</button>
+                <button class="btn btn-num">6</button>
+                <button class="btn btn-num">+</button>
+            </div>
+            
+            <div class="line">
+                <button class="btn btn-num">1</button>
+                <button class="btn btn-num">2</button>
+                <button class="btn btn-num">3</button>
+                <button class="btn btn-num">-</button>
+            </div>    
+
+            <div class="line">
+                <button class="btn btn-del">&laquo;</button> 
+                <button class="btn btn-num">0</button>
+                <button class="btn btn-num">.</button>
+                <button class="btn btn-num">X</button>
+            </div> 
+            
+            <div class="line">
+                <button class="btn btn-reset">RESET</button>
+                <button class="btn btn-eq">=</button>     
+            </div>
+        </div>     
+       
+    </div>
+ 
+    <script src="script.js"></script>
 </body>
 </html>

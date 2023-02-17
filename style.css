@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, #2c27dd 0%, #8E7ECE 100%);
+
+    display: grid;
+    place-content: center;
+}
+
+body * {
+    font-family: 'Rubik';
+    letter-spacing: -0.02em;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.calculator {
+    width: 330px;
+    height: 500px;
+    border-radius: 20px;
+
+    margin: auto;
+    border: 1px solid rgb(8, 8, 8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #2D2A37;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 
+    0px 188px 52px rgba(0, 0, 0, 0.01), 
+    0px 120px 48px rgba(0, 0, 0, 0.04), 
+    0px 68px 41px rgba(0, 0, 0, 0.15), 
+    0px 30px 30px rgba(0, 0, 0, 0.26), 
+    0px 8px 17px rgba(0, 0, 0, 0.29), 
+    inset 0px 6px 8px rgba(255, 255, 255, 0.1), 
+    inset 0px -4px 5px rgba(0, 0, 0, 0.22);
+}
+
+.display {
+    border-radius: 8px;
+    width: 280px;
+    height: 60px;
+    padding: 20PX;
+
+    margin: 20px 0;
+    
+    display: flex;
+    text-align: right;
+
+    font-size: 36px;
+    line-height: 140%;
+
+    background: #59575a;
+}
+
+.keyboard {  
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #ebebeb;
+    margin: 4px;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: 
+        linear-gradient(180deg, 
+        rgba(0, 0, 0, 0.05) 0%,
+         rgba(255, 255, 255, 0.05) 100%),
+         #40375c;
+    box-shadow: 
+        0px 11px 7px rgb(0 0 0 / 1%), 
+        0px 7px 7px rgb(0 0 0 / 4%), 
+        0px 4px 6px rgb(0 0 0 / 10%), 
+        0px 2px 4px rgb(0 0 0 / 26%), 
+        0px 0px 2px rgb(0 0 0 / 29%), 
+        inset 0px 2px 3px 
+        rgb(255 255 255 / 6%);
+}
+
+.btn-reset, .btn-eq {
+    width: 140px;
+}
+
+.btn-clear, .btn-eq {
+    width: 140px;
+}
+
+.btn-reset {
+    background: red;
+} 
