@@ -1,55 +1,58 @@
-function Calculadora() {
+function Calculator() {
     this.display = document.querySelector('.display')
-    this.iniciar = () => {
+    this.start = () => {
         this.clickBtn();
     }
+
 
     this.clickBtn = () => {
         document.addEventListener('click', (event) => {
             const elemento = event.target;
-            if (elemento.classList.contains('btn-num')) this.enviaNumDisplay(elemento)            
-            if (elemento.classList.contains('btn-del')) this.btnDelete()
-            if (elemento.classList.contains('btn-clear')) this.btnClear()         
-            if (elemento.classList.contains('btn-eq')) this.realizaConta()         
+              
+            if (elemento.classList.contains('btn-num')) this.sendNumDisplay(elemento)            
+            if (elemento.classList.contains('btn-del')) this.btnDel()
+            if (elemento.classList.contains('btn-reset')) this.btnReset()         
+            if (elemento.classList.contains('btn-eq')) this.doAccount()         
         })
     }
 
-    this.enviaNumDisplay = elemento => {
+    this.sendNumDisplay = elemento => {
         this.display.value += elemento.innerText;
     }
 
-    this.btnDelete = () => {
+    this.btnDel = () => {
         this.display.value = this.display.value.slice(0, -1);
     }
     
-    this.btnClear = () => {
+    this.btnReset = () => {
         this.display.value = '';
     }  
 
-    this.realizaConta = () => {
+    this.doAccount = () => {
         try{
-            let conta = eval(this.display.value);
+            let count = eval(this.display.value);
 
-            if(conta === 0) {
-                conta = this.display.value = '';
-            } else if(!conta) {
-                // alert('Conta inválida');
-                conta = this.display.value = 'Erro';
-                return;
-            }
-
-            this.display.value = String(conta);
+            // if(conta === 0) {
+            //     conta = this.display.value = '';
+            // } 
+            // else if(!conta) {
+            //     // alert('Conta inválida');
+            //     conta = this.display.value = 'Erro';
+            //     return;
+            // }
+            
+            this.display.value = count;
         } catch(e) {
-            alert('Conta inválida');
+            console.log(e);
+            // conta = this.display.value = 'Erro';
         }
     }
 
 
 }
 
-
-const calculadora = new Calculadora()
-calculadora.iniciar()
+const calculator = new Calculator()
+calculator.start()
 
 
  

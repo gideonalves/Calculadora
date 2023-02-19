@@ -48,6 +48,7 @@ body * {
 }
 
 .display {
+    color: #ebebeb;
     border-radius: 8px;
     width: 280px;
     height: 60px;
@@ -102,14 +103,12 @@ body * {
         rgb(255 255 255 / 6%);
 }
 
-.btn-reset, .btn-eq {
-    width: 140px;
-}
-
-.btn-clear, .btn-eq {
-    width: 140px;
+.btn-reset, 
+.btn-eq {
+    width: 100%;
 }
 
 .btn-reset {
-    background: red;
+    background: rgb(200, 12, 12);
+    font-size: 16px;
 } 
