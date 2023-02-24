@@ -65,6 +65,11 @@ body * {
     background: #59575a;
 }
 
+.display.active {
+    color: #ebebeb;
+    background: yellow;
+}
+
 .keyboard {  
     display: flex;
     flex-direction: column;
