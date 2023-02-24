@@ -2,7 +2,7 @@
 
 Esta é uma [Calculadora ](https://loquacious-moxie-33dc41.netlify.app/). criada com funções construtoras
 
-Os desafios do Frontend Mentor nos ajudam a melhorar nossas habilidades de codificação ao construir projetos realistas. 
+
 
 ## Índice
 
@@ -25,7 +25,7 @@ Os desafios do Frontend Mentor nos ajudam a melhorar nossas habilidades de codif
 
 Os usuários devem ser capazes de:
 
-- Ver o tamanho dos elementos ajustados com base no tamanho da tela de seus dispositivos
+
 - Realizar operações matemáticas como adição, subtração, multiplicação e divisão
 - Pressionando a tecla Esc limpa o display.
 
